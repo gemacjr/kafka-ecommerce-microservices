@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface:   #0a0f1e;
+  --color-panel:     #0f1729;
+  --color-border:    #1e2d4a;
+  --color-muted:     #3a4a6b;
+}
+
+html, body {
+  background-color: #0a0f1e;
+  color: #e2e8f0;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #1e2d4a; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #2d4070; }
+
+/* React Flow overrides */
+.react-flow__attribution { display: none !important; }
+.react-flow__controls {
+  background: #0f1729 !important;
+  border: 1px solid #1e2d4a !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+.react-flow__controls-button {
+  background: transparent !important;
+  border-color: #1e2d4a !important;
+  color: #64748b !important;
+}
+.react-flow__controls-button:hover {
+  background: #1e2d4a !important;
+  color: #e2e8f0 !important;
+}
